@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+    <string name="city_name_tbilisi">Tbilisi</string>
+    <string name="city_name_london">London</string>
+    <string name="city_name_kingston">Kingston</string>
+    <string name="details_label">DETAILS</string>
+    <string name="temperature_label">TEMPERATURE</string>
+    <string name="feels_like_label">FEELS LIKE</string>
+    <string name="humidity_label">HUMIDITY</string>
+    <string name="pressure_label">PRESSURE</string>
+</resources>

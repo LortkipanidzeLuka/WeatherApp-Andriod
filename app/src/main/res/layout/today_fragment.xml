@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent" >
+
+
+        <ImageView
+            android:id="@+id/weatherImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/temperatureTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="5"
+            android:textColor="@color/white"
+            android:textSize="48sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/weatherImage"></TextView>
+
+        <TextView
+            android:id="@+id/weatherDescriptionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="BROKEN CLOUDS"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/temperatureTextView">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/temperatureLabel"
+            style="@style/DetailNameTextViewStyle"
+            android:text= "@string/temperature_label"
+            app:layout_constraintBottom_toTopOf="@+id/feelsLikeLabel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/detailsLabel">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/feelsLikeLabel"
+            style="@style/DetailNameTextViewStyle"
+            android:text="@string/feels_like_label"
+            app:layout_constraintBottom_toTopOf="@+id/humidityLabel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/temperatureLabel">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/pressureLabel"
+            style="@style/DetailNameTextViewStyle"
+            android:text="@string/pressure_label"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/humidityLabel">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/detailsLabel"
+            style="@style/DetailNameTextViewStyle"
+            android:text="@string/details_label"
+            app:layout_constraintBottom_toTopOf="@+id/temperatureLabel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/weatherDescriptionTextView">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/humidityLabel"
+            style="@style/DetailNameTextViewStyle"
+            android:text="@string/humidity_label"
+            app:layout_constraintBottom_toTopOf="@+id/pressureLabel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/feelsLikeLabel">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/feelsLikeValueTextView"
+            style="@style/DetailValueTextViewStyle"
+            android:text="3"
+            app:layout_constraintBottom_toTopOf="@+id/humidityValueTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/temperatureValueTextView"></TextView>
+
+        <TextView
+            android:id="@+id/pressureValueTextView"
+            style="@style/DetailValueTextViewStyle"
+            android:text="1010"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/humidityValueTextView"></TextView>
+
+        <TextView
+            android:id="@+id/humidityValueTextView"
+            style="@style/DetailValueTextViewStyle"
+            android:text="78%"
+            app:layout_constraintBottom_toTopOf="@+id/pressureValueTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/feelsLikeValueTextView"></TextView>
+
+        <TextView
+            android:id="@+id/temperatureValueTextView"
+            style="@style/DetailValueTextViewStyle"
+            android:text="5"
+            app:layout_constraintBottom_toTopOf="@+id/feelsLikeValueTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/detailsLabel"></TextView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
